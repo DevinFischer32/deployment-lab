@@ -9,10 +9,7 @@ app.get("/", (req, res) => {
 });
 
 //Endpoint for CSS
-app.get("/css", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client/index.css"));
-  });
-
+app.use("/css", express.static(path.join(__dirname, "../client/index.css")))
 //Endpoint for JS
 
 
