@@ -9,8 +9,8 @@ app.get("/", (req, res) => {
 });
 
 //Endpoint for CSS
-app.use("/css", express.static(path.join(__dirname, "../client/index.css")))
-//Endpoint for JS
+app.use("/css", express.static(path.join(__dirname, "../client/styles.css")))
+
 
 
 // const port = huriku port if it doesn't exisit then port will be 4005
