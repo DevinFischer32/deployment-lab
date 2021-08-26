@@ -8,6 +8,14 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/index.html"));
 });
 
+//Endpoint for CSS
+app.get("/css", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/index.css"));
+  });
+
+//Endpoint for JS
+
+
 // const port = huriku port if it doesn't exisit then port will be 4005
 const port = process.env.PORT || 4005;
 
